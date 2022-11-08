@@ -4,7 +4,8 @@ abc
 
 
 
-SAST to SonarQube Git Lab:
+#SAST to SonarQube Git Lab:
+
 node
 {
         stage('clonning from GIT'){
@@ -12,7 +13,7 @@ node
         }
 }
 
-Image has been added: (add trigger, then after that in code add this)
+#Image has been added: (add trigger, then after that in code add this)
 
 exports.handler = function(event, context, callback) {
 console.log("Incoming Event:" , event);
