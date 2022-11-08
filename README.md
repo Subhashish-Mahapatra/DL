@@ -38,9 +38,8 @@ def lambda_handler(event, context):
  
  
  #terraform
-Install curl on linux using sudo apt install curl
+ sudo apt install curl
 • Execute curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-• sudo apt install unzip
 • sudo unzip awscliv2.zip
 • sudo ./aws/install
 • aws –version
