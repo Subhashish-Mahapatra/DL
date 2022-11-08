@@ -54,10 +54,27 @@ onworks@onworks-Standard-PC-i440FX-PIIX-1996:~$ cd ~
 onworks@onworks-Standard-PC-i440FX-PIIX-1996:~$ mkdir project-terraform 
 onworks@onworks-Standard-PC-i440FX-PIIX-1996:~$ cd project-terraform
 • Run sudo nano variables.tf
+
+variable "aws_region" {
+  description = "The AWS region to create things in. "
+  default     = "ap-south-1"
+}
+
+variable "key_name" {
+  description = " SSH keys to connect to ec2 instance"
+  default     = "terraform"
+}
+
+variable "instance_type" {
+  description = "instance type for ec2"
+  default     = "t2.micro"
+}
+
 • Go to EC2 and create key pair. Give name to key pair file as terraform and click pem
 • Use your Region and Key name in variable.tf as shown and provide instance type which you 
 want to create
 • After create main.tf file. Sudo nano main.tf
+
 • Then in ec2 console go to ami catalog and select ami linux2 and copy ami id and change in 
 main.tf in provider change region 
 • Run terraform init
