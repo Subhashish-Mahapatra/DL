@@ -22,3 +22,16 @@ const message = `File is uploaded in — ${bucket} -> ${filename}`;
 console.log(message);
 callback(null, message);
 };
+
+# basic lambda function:
+import json
+def lambda_handler(event, context):
+ first_number=100
+ second_number=200
+ sum = first_number + second_number
+ return sum
+
+2)
+def lambda_handler(event, context):
+ if event["name"]=="subhashish":
+ return "apsit"
